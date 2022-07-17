@@ -117,9 +117,7 @@ void mastermind::play() {
 
     std::string input = "";
     randomizeSolution();
-    std::cout << "Solution: " << std::endl;
-    printBoard(answerBoard);
-
+   
     while (!matched) {
       std::cout << "Enter a guess: ";
       std::cin >> input;
