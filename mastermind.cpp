@@ -1,4 +1,9 @@
-//mastermind
+/* 
+* Simple Mastermind Game
+* An eight index board is randomly filled with four colors represented by B = "Black", W = "White", R = "Red", Y = "Yellow"
+* The user has a fixed number of guesses to match the pattern
+* User input = eight char string without spaces. Input is transformed to uppercase before being displayed on board
+*/
 
 #include <iostream>
 #include <string>
