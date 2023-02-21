@@ -110,16 +110,24 @@ std::string mastermind::updateBoard(std::string input)
 void mastermind::play() {
     int tries = 4;
     bool matched = false;
-    std::cout << "\n     Welcome to MASTERMIND!" << std::endl;
+    std::cout << "\n     Welcome to MASTERMIND!" << std::endl;    
+   
     // print empty board to start
     board = "????????";
+    std::cout << "\n";
     printBoard(board);
+    std::cout << "\n";
+
+    std::cout << "     The board has been filled with colors Black, White, Red and Yellow." << std::endl;
+    std::cout << "     Can you guess the order?" << std::endl;
+    std::cout << "     Input an string of length 8 with combinations of 'B','W','R','Y'. (Ex: BBWRYRYB)\n" << std::endl;
+
 
     std::string input = "";
     randomizeSolution();
    
     while (!matched) {
-      std::cout << "Enter a guess: ";
+      std::cout << "     Enter a guess: ";
       std::cin >> input;
 
       // convert input to uppercase
